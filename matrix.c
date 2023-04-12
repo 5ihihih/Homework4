@@ -92,7 +92,7 @@ void print_matrix(int **a, int r, int c){
 /*두 행렬의 주소, 행의 크기, 열의 크기를 인자로 받아 덧셈을 하는 함수*/
 void addition_matrix(int **a, int **b, int Ar, int Ac, int Br, int Bc){  
   if(Ar==Br || Ac==Bc){                         //행렬 A와 B의 행과 열의 크기가 각각 같다면 덧셈을 수행한다
-    add = (int**)malloc(sizeof(int*)*Ar);      //덧셈의 결과를 받을 행렬의 메모리를 할당한다
+    add = (int**)malloc(sizeof(int*)*Ar);       //덧셈의 결과를 받을 행렬의 메모리를 할당한다
     for(int i=0; i<Ac; i++){
         add[i] = (int*)malloc(sizeof(int)*Ac);
     }
@@ -107,7 +107,7 @@ void addition_matrix(int **a, int **b, int Ar, int Ac, int Br, int Bc){
 /*두 행렬의 주소, 행의 크기, 열의 크기를 인자로 받아 뺄셈을 하는 함수*/
 void subtraction_matrix(int **a, int **b, int Ar, int Ac, int Br, int Bc){
   if(Ar==Br || Ac==Bc){                         //행렬 A와 B의 행과 열의 크기가 각각 같다면 뺄셈을 수행한다
-    sub = (int**)malloc(sizeof(int*)*Ar);      //뺄셈의 결과를 받을 행렬의 메모리를 할당한다
+    sub = (int**)malloc(sizeof(int*)*Ar);       //뺄셈의 결과를 받을 행렬의 메모리를 할당한다
 
     for(int i=0; i<Ac; i++){                    
         sub[i] = (int*)malloc(sizeof(int)*Ac);
